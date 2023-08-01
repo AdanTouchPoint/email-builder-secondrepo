@@ -339,8 +339,9 @@ states.length > 0 ?
 ></Link>
   <h2>{mainData.senatorLabel}</h2>
   <div className="representatives-container">
+    {console.log(senator)}
     {senator.length > 0 ? (
-    configurations.filter === 'party' ? senator.filter((el)=> el.party === 'ALP').map((mps, index) => (
+    configurations.filter === 'state' ? senator.filter((el)=> el.state === 'WA').map((mps, index) => (
       <List
         setShowEmailForm={setShowEmailForm}
         setShowFindForm={setShowFindForm}
@@ -378,7 +379,7 @@ states.length > 0 ?
   <div className="representatives-container">
     {console.log(mp)}
     {mp.length > 0 ? (
-      configurations.filter === 'party' ? mp.filter((el)=> el.party === 'ALP').map((mps, index) => (
+      configurations.filter === 'state' ? mp.filter((el)=> el.state === 'WA').map((mps, index) => (
         <List
           setShowEmailForm={setShowEmailForm}
           setShowFindForm={setShowFindForm}
