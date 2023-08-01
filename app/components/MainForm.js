@@ -66,7 +66,7 @@ const {formFields} = mainData
   const fieldValidator = () => {
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     const isValidEmail = (email) => {
-      return emailRegex.test(email);
+      return emailRegex.test(email.trim());
     };
     for (let key in dataUser) {
       console.log(key)
@@ -186,8 +186,7 @@ const {formFields} = mainData
         <div hidden={showFindForm} className={"container container-content"}>
           {error ? (
             <Alert variant={"danger"}>
-              Todos lo campos son necesarios, por favor introduzca los
-              faltantes.
+              Please fill all fields.  Also, please make sure there are no spaces before of after your email or postcode.
             </Alert>
           ) : null}
           <Link
