@@ -214,6 +214,19 @@ display: flex;
     row-gap: 20px;
 
   }
+    .field {
+    justify-content: center;
+    width:100%;
+    text-align: left;
+  }
+  .instructions{
+    padding: 20px;
+    max-width: 1150px;
+  }
+  .container-content{
+    text-align: center;
+    padding: 10px 12px;
+  }
   h3 > .typ-content{
     line-height: 1.7em !important;
   }
