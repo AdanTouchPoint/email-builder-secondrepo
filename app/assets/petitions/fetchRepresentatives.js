@@ -11,12 +11,14 @@ const fetchRepresentatives = async (petitionMethod, backendURLBase, endpoint, cl
       setShowList(false)
       return
      }
+
+  
     let query = datos.data;
-    let fill = await query.map((el) => {
-      return el[0];
-    });
-    setMp(fill);
-    setSenator(datos.statesFilter)
+    console.log(query)
+    const deepArrays = query.flatMap((elemento) => elemento);
+    let fill = deepArrays
+    setMp(fill.filter((mp)  => mp.govt_type === "State MPs"));
+    setSenator(deepArrays.filter((mp)  => mp.govt_type !== "State MPs"))
     setShowLoadSpin(false)
     setShowList(false)
 

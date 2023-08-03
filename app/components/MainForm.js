@@ -377,8 +377,8 @@ states.length > 0 ?
   <h2>{mainData.positionName}</h2>
   <div className="representatives-container">
     {console.log(mp)}
-    {mp.length > 0 ? (
-      configurations.filter === 'state' ? mp.filter((el)=> el.state === 'WA').map((mps, index) => (
+    {mp?.length > 0 ? (
+      configurations.filter === 'state' ? mp?.filter((el)=> el?.state === 'WA').map((mps, index) => (
         <List
           setShowEmailForm={setShowEmailForm}
           setShowFindForm={setShowFindForm}
@@ -391,7 +391,7 @@ states.length > 0 ?
           key={index}
           tweet={tweet}
         />
-      )) : mp.map((mps, index) => (
+      )) : mp?.map((mps, index) => (
         <List
           setShowEmailForm={setShowEmailForm}
           setShowFindForm={setShowFindForm}

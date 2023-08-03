@@ -34,7 +34,7 @@ function Home() {
         toGetRepresentativesPerStates:'/representatives-state/',
         toGetRepresentativesPerParty:'/representatives-party/',
         toGetAllRepresentatives:'/all-senators/',
-        toGetRepresentativesByCp:'/find-mp/',
+        toGetRepresentativesByCp:'/find-states-reps/',
         toGetQuestions:'/questions/',
         toGetMainData:'/main/',
         toGetThankYouMessage:'/typ-message/',
