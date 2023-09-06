@@ -340,7 +340,7 @@ states.length > 0 ?
   <div className="representatives-container">
     {console.log(senator)}
     {senator.length > 0 ? (
-    configurations.filter === 'state' ? senator.filter((el)=> el.state === 'WA').map((mps, index) => (
+    configurations.filter === 'state' ? senator.filter((el)=> el.state === 'QLD').map((mps, index) => (
       <List
         setShowEmailForm={setShowEmailForm}
         setShowFindForm={setShowFindForm}
@@ -378,7 +378,7 @@ states.length > 0 ?
   <div className="representatives-container">
     {console.log(mp)}
     {mp?.length > 0 ? (
-      configurations.filter === 'state' ? mp?.filter((el)=> el?.state === 'WA').map((mps, index) => (
+      configurations.filter === 'state' ? mp?.filter((el)=> el?.state === 'QLD').map((mps, index) => (
         <List
           setShowEmailForm={setShowEmailForm}
           setShowFindForm={setShowFindForm}
